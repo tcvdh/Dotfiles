@@ -16,7 +16,8 @@
         "cpu",
         "memory",
         "pulseaudio",
-        "power-profiles-daemon"
+        "power-profiles-daemon",
+        "custom/power"
     ],
     "hyprland/workspaces": {
         "format": "<span size='small' font='normal Font Awesome 6 Free'>{icon}</span>",
@@ -112,6 +113,18 @@
         "balanced": "",
         "power-saver": ""
       }
+    },
+    "custom/power": {
+        "format": "⏻ ",
+        "tooltip": true, // You can set this to true if you want a tooltip
+        "menu": "on-click",
+        "menu-file": "~/.config/waybar/power_menu.xml",
+        "menu-actions": {
+            "shutdown": "shutdown",
+            "reboot": "reboot",
+            "suspend": "systemctl suspend",
+            "hibernate": "systemctl hibernate" // Added hibernate option
+        }
     },
     "pulseaudio": {
         "format": "{icon} {volume}% {format_source}",

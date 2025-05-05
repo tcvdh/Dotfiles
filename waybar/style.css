@@ -31,6 +31,7 @@ tooltip {
 #memory,
 #pulseaudio,
 #gamemode,
+#custom-power,
 #custom-updates {
     /*text-shadow: 1px 1px 2px rgb(0, 0, 0);*/
     /* text shadow, offset-x | offset-y | blur-radius | color */
@@ -45,6 +46,9 @@ tooltip {
     border-radius: 8px; /*Default 5*/
     /* rounded corners */
     color: #77b5a6;
+}
+#custom-power {
+    padding-right: 2px;
 }
 
 /* extend empty space on both side of the bar,
@@ -70,7 +74,7 @@ tooltip {
 }
 
 #workspaces button {
-    padding: 0px 12px 0px 8px;
+    padding: 0px 8px 0px 8px;
     /* fit with pill padding, 0px for not haveing duped vertical padding, 4px to make a square (4px value from module padding: ...#clock {padding >>4px<< 10px}) */
     margin-left: 3px;
     border: 1px solid transparent;
