@@ -120,7 +120,7 @@
         "menu": "on-click",
         "menu-file": "~/.config/waybar/power_menu.xml",
         "menu-actions": {
-            "shutdown": "shutdown",
+            "shutdown": "shutdown now",
             "reboot": "reboot",
             "suspend": "systemctl suspend",
             "hibernate": "systemctl hibernate" // Added hibernate option
