@@ -1,0 +1,20 @@
+# allowlist: ignore everything in ~/.config, then opt specific things back in
+/*
+!/.gitignore
+!/README.md
+!/hypr/
+!/quickshell/
+!/kitty/
+!/waypaper/
+!/btop/
+!/fastfetch/
+!/mpv/
+!/Thunar/
+!/xfce4/
+!/pipewire/
+!/wireplumber/
+!/autostart/
+
+# not wanted inside the allowed folders
+*.bak
+mimeinfo.cache
