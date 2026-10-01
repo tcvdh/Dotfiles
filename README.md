@@ -1,13 +1,26 @@
 # Dotfiles
 
-Arch Linux + Hyprland (`~/.config`). Only an allowlist is tracked (see `.gitignore`); everything else in `~/.config` is ignored.
+Arch Linux + Hyprland, with a custom [Quickshell](https://quickshell.org) shell in Nord colours.
 
-- `hypr/` Hyprland (Lua config) and hyprlock
-- `quickshell/` the shell: bar, app launcher (`SUPER+R`), clipboard history (`SUPER+SHIFT+V`), emoji picker (`SUPER+.`), power menu, notifications, Claude usage limits
-- `kitty/`, `btop/`, `fastfetch/`, `mpv/`, `waypaper/`, `Thunar/`, `xfce4/`, `pipewire/`, `wireplumber/`, `autostart/`
+![Desktop](docs/desktop.png)
 
-Neovim lives in its own repo: https://github.com/tcvdh/init.lua
+## What's here
+| Path | What |
+|---|---|
+| `hypr/` | Hyprland (Lua config) and hyprlock |
+| `quickshell/` | Bar, app launcher, power menu, notifications, clipboard history, emoji picker, Bluetooth |
+| `kitty/` | Terminal |
+| `pipewire/`, `wireplumber/` | Audio |
+| `waypaper/`, `btop/`, `fastfetch/`, `mpv/`, `Thunar/`, `xfce4/`, `autostart/` | App configs |
 
-## Quickshell dependencies
+Neovim lives in its own repo: [init.lua](https://github.com/tcvdh/init.lua).
 
-`quickshell jq curl cliphist wl-clipboard hyprlock pavucontrol waypaper` and a Nerd Font (`ttf-jetbrains-mono-nerd`).
+## Quickshell highlights
+- **Bar** on both monitors: workspaces, media (click = play/pause, right-click = next), CPU/RAM, Claude usage limits, tray, volume, Bluetooth.
+- **Launcher** (`SUPER+R`): apps, `>` actions, `;` clipboard history, `:` emoji.
+- **Clipboard history** via `cliphist`, including Neovim yanks (also over SSH via OSC 52).
+- **Notifications** and **power menu**, with blur behind everything.
+
+## Use
+Needs `hyprland`, `quickshell`, `jq`, `curl`, `cliphist`, `wl-clipboard` and a Nerd Font.
+Clone into `~/.config` (the `.gitignore` only tracks the folders above).
